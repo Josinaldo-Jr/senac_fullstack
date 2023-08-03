@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Aula 06-Links</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo à Minha Página</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#QuemSou">Quem sou</a></li>
+            <li><a href="#OqueGosto">O que gosto de fazer</a></li>
+            <li><a href="#OqueEstou">O que estou estudando</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="QuemSou">Quem sou</h2>
+            <p>
+                Olá, eu sou o Júnior 🧑🏻‍💻 <br>
+                Estudante do curso de Full Stack e Programador de Sistemas. <br>
+                Graduado em Design Gráfico, com anos de experiência em ensino de softwares na área.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="OqueGosto">O que gosto de fazer</h2>
+            <p>Sou apaixonado pela minha família, gosto de design/tecnologia e curto jogar RPG/Games por diverção.</p>
+
+            <ul>
+                <li><a href="#shy">Família</a></li>
+                <li><a href="#dtec">Design e Tecnologia</a></li>
+                <li><a href="#game">Games e RPG</a></li>                
+            </ul>
+
+            <figure>
+                <img id="shy" src="./shy.jpeg" alt="Coelho fofo" width="300px">
+                <figcaption>Shy, o coelho.</figcaption>
+            </figure>
+            <figure>
+                <img id="dtec" src="./design.jpg" alt="RPG e Boardgame" width="300px">
+                <figcaption>Design e Tecnologia</figcaption>
+            </figure>
+            <figure>
+                <img id="game" src="./rpg.jpg" alt="Logo HTML e CSS" width="300px">
+                <figcaption>Games e RPG</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2 id="OqueEstou">O que estou estudando</h2>
+            <figure>
+                <img src="./htmlcss.png" alt="Logo HTML e CSS" width="300px">
+                <figcaption>Logotipo do CSS e HTML</figcaption>
+            </figure>
+        </section>
+
+    </main>
+    <!-- <a href="destino.html">Clique aqui</a>
+    <a href="https://github.com/" target="_blank" title="Link o github">Clique aqui para acessar o github</a> <br>
+    <a href="./pagina1.html" target="_self" title="Link para o arquivo pagina1">Clique aqui para acessar uma página local</a> -->
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/Josinaldo-Jr">Josinaldo Jr</a></p>
+    </footer>
+
+</body>
+
+</html>

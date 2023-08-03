@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: helvetica;
+}
+
+body{
+    background-image: url("./bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+ol>li, h1, dt{
+    color: rgb(0, 140, 255);
+}
+
+main{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    width: 60%;
+}
+
+p{
+    width: 50%;
+}

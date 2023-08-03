@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-05: Tabelas I</title>
+    <!-- <style>
+        table, tr, td{
+            border: 1px black solid;
+        }
+    </style> -->
+</head>
+<body>
+    <table width="50%" border="5px" align="center">
+        <tr>
+            <th>th1</th>
+            <th>th2</th>
+            <th>th3</th>
+        </tr>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+            <td>Linha 2, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
+            <td>Linha 3, Coluna 3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table align="center" border="1px">
+        <tr align="center">
+            <th>O quê</th>
+            <th>Quando</th>
+        </tr>
+        <tr align="center">
+            <td>Entrar na área Dev</td>
+            <td>Antes do final do ano</td>
+        </tr>
+        <tr align="center">
+            <td>Sair do país</td>
+            <td>2025</td>
+        </tr>
+        <tr align="center">
+            <td>Pular de asa delta</td>
+            <td>Quando me formar na área</td>
+        </tr>
+        <tr align="center">
+            <td>Completar a coleção Pokémon</td>
+            <td>Quando chegar na Europa</td>
+        </tr>
+        <tr align="center">
+            <td>Viajar pelo mundo</td>
+            <td>Antes dos 40</td>
+        </tr>
+        <tr align="center">
+            <td>Nadar com tubarões</td>
+            <td>Quando aprender a nadar..rs</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table align="center" border="5px" cellpadding="10px" cellspacing="10px">
+        <tr align="center">
+            <th>Disciplina</th>
+            <th>Professor</th>
+            <th>Carga Horária</th>
+        </tr>
+        <tr align="center">
+            <td>Matemática</td>
+            <td>Prof. Silva</td>
+            <td>60 horas</td>
+        </tr>
+        <tr align="center">
+            <td>Português</td>
+            <td>Prof. Santos</td>
+            <td>45 horas</td>
+        </tr>
+        <tr align="center">
+            <td>Física</td>
+            <td>Prof. Oliveira</td>
+            <td>75 horas</td>
+        </tr>
+        <tr align="center">
+            <td>Química</td>
+            <td>Prof. Souza</td>
+            <td>90 horas</td>
+        </tr>   
+    </table>  
+
+    <hr>
+
+    <table  border="10x" cellpadding="10px" cellspacing="10px">
+        <tr align="center">
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr align="center">
+            <td>João</td>
+            <td>25</td>
+        </tr>
+        <tr align="center">
+            <td>Maria</td>
+            <td>30</td>      
+    </table>
+    <table  border="10x" cellpadding="10px" cellspacing="10px">
+        <tr align="center">
+            <th>Fruta</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr align="center">
+            <td>Maçã</td>
+            <td>5</td>
+        </tr>
+        <tr align="center">
+            <td>Laranja</td>
+            <td>10</td>      
+    </table>
+
+    <hr>
+
+    <table  border="1px" cellpadding="10px" cellspacing="1px" align="center">
+        <tr align="center">
+            <td colspan="3">Dados Pessoais dos Alunos</td>
+        </tr>
+        <tr align="center">
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+        </tr>
+        <tr align="center">
+            <td>Joaquim</td>
+            <td>9999-8888</td>
+            <td rowspan="2">SALA 01</td>
+        </tr>
+        <tr align="center">
+            <td>Maria</td>
+            <td>1234-1234</td> 
+        </tr>   
+        <tr align="center">
+            <td>Josefa</td>
+            <td>7777-8888</td>    
+            <td>SALA 02</td> 
+        </tr>   
+    </table>
+
+    <hr>
+
+    <table align="center" border="1" width="800">
+        <tr>
+            <th rowspan="2">Jogo</th>
+            <th colspan="2">Laçamento</th>
+            <th rowspan="2">Plataforma</th>
+            <th rowspan="2">Gênero</th>
+            <th rowspan="2">Desenvolvedora</th>
+        </tr>
+
+        <tr>
+            <th>América</th>
+            <th>Europa</th>
+        </tr>
+
+        <tr>
+            <td>The Legend of Zelda</td>
+            <td>1986</td>
+            <td>1987</td>
+            <td>Nintendo Entertainment System (NES)</td>
+            <td>Aventura</td>
+            <td rowspan="2">Nintendo</td>
+        </tr>
+
+        <tr>
+            <td>Super Mario Bros.</td>
+            <td>1985</td>
+            <td>1985</td>
+            <td>Nintendo Entertainment System (NES)</td>
+            <td>Plataforma</td>
+        </tr>
+
+        <tr>
+            <td>Tetris</td>
+            <td>1989</td>
+            <td>1989</td>
+            <td>Game Boy</td>
+            <td>Puzzle</td>
+            <td>Various</td>
+        </tr>
+
+        <tr>
+            <td>Pac-Man</td>
+            <td>1980</td>
+            <td>1981</td>
+            <td>Arcade</td>
+            <td>Arcade</td>
+            <td>Namco</td>
+        </tr>
+
+        <tr>
+            <td>Donkey Kong</td>
+            <td>1981</td>
+            <td>1982</td>
+            <td>Arcade</td>
+            <td>Arcade</td>
+            <td>Nintendo</td>
+        </tr>
+
+        <tr>
+            <td>Space Invaders</td>
+            <td>1978</td>
+            <td>1978</td>
+            <td>Arcade</td>
+            <td>Tiro</td>
+            <td>Taito</td>
+        </tr>
+
+        <tr>
+            <td>Street Fighter II</td>
+            <td>1991</td>
+            <td>1991</td>
+            <td>Arcade</td>
+            <td>Luta</td>
+            <td>Capcom</td>
+        </tr>
+
+        <tr>
+            <td>Sonic the Hedgehog</td>
+            <td>1991</td>
+            <td>1991</td>
+            <td>Sega Genesis</td>
+            <td>Plataforma</td>
+            <td>Sonic Team</td>
+        </tr>
+
+        <tr>
+            <td>Final Fantasy VII</td>
+            <td>1997</td>
+            <td>1997</td>
+            <td>PlayStation</td>
+            <td>RPG</td>
+            <td>Square</td>
+        </tr>
+
+        <tr>
+            <td>The Sims</td>
+            <td>2000</td>
+            <td>2000</td>
+            <td>PC</td>
+            <td>Simulação</td>
+            <td>Maxis</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
