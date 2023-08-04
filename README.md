@@ -26,7 +26,8 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
   
    - Imagem [Design](https://br.freepik.com/fotos-gratis/conceito-de-design-de-inspiracao-de-visao-de-progresso-de-ideias_16437978.htm#query=design%20e%20tecnologia&position=1&from_view=search&track=country_rows_v2)
-   - Imagem [Rpg](https://br.freepik.com/fotos-gratis/conceito-de-design-de-inspiracao-de-visao-de-progresso-de-ideias_16437978.htm#query=design%20e%20tecnologia&position=1&from_view=search&track=country_rows_v2)
+   - Imagem [Rpg](https://br.freepik.com/fotos-gratis/ainda-vida-de-objetos-com-folha-de-jogo-de-rpg_24749848.htm#from_view=detail_serie)
+   - Imagem [BGt3](https://www.freepik.com/free-vector/code-typing-concept-illustration_18840617.htm#query=frontend&position=19&from_view=search&track=sph)
 
    
 ## Autores
