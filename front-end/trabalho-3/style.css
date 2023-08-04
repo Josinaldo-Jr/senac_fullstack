@@ -178,4 +178,11 @@ tbody tr:nth-child(even) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #f2f2f2;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-sobre h1{
+    color: #3b3b3b;
 }
