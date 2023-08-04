@@ -16,11 +16,11 @@ Como aluno do curso de Full Stack no SENAC, este repositório será uma ferramen
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 ```
 
-## Como Utilizar
-
 - **Acessar Materiais:** Navegue pelas pastas para encontrar os materiais das aulas, como slides, códigos de exemplos e exercícios práticos.
 
 - **Participar e Colaborar:** Sinta-se à vontade para abrir issues relatando problemas, dúvidas ou sugestões relacionadas aos conteúdos. Além disso, você também pode enviar pull requests com melhorias ou correções em casos de erros.
+
+## Atribuições
 
 - **Atribuição de Imagens:** Note que algumas imagens utilizadas neste repositório são criadas por artistas do [Freepik](https://br.freepik.com/), e são usadas de acordo com os termos de uso do Freepik, que permitem o uso gratuito com atribuição adequada. As imagens atribuídas ao Freepik estão listadas abaixo:
 
@@ -28,7 +28,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
    - Imagem [Design](https://br.freepik.com/fotos-gratis/conceito-de-design-de-inspiracao-de-visao-de-progresso-de-ideias_16437978.htm#query=design%20e%20tecnologia&position=1&from_view=search&track=country_rows_v2)
    - Imagem [Rpg](https://br.freepik.com/fotos-gratis/ainda-vida-de-objetos-com-folha-de-jogo-de-rpg_24749848.htm#from_view=detail_serie)
    - Imagem [BGt3](https://www.freepik.com/free-vector/code-typing-concept-illustration_18840617.htm#query=frontend&position=19&from_view=search&track=sph)
-     - Imagem [BGt2](https://www.freepik.com/free-vector/flat-online-education-concept-background_4360069.htm)   
+   - Imagem [BGt2](https://www.freepik.com/free-vector/flat-online-education-concept-background_4360069.htm)   
+   - Imagem [logosenac](https://www.gratispng.com/png-p8e2j6/)   
+   
 
    
 ## Autores
