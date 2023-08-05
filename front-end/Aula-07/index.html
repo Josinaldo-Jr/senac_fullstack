@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07-Formulários</title>
+</head>
+
+<body>
+
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <br>
+
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label>
+    <br>
+
+    <input type="radio" name="genero" id="outro" value="outro">
+    <label for="outro">Outro</label>
+    <hr>
+
+    <select name="pais" id="pais">
+        <option value="brasil">Brasil</option>
+        <option value="eua">Estados Unidos</option>
+        <option value="canada">Canadá</option>
+        <option value="japao">Japão</option>
+        <option value="alemanha">Alemanha</option>
+    </select>
+    <hr>
+
+    <input type="checkbox" name="frutas" id="laranja" value="laranja">
+    <label for="laranja">Laranja</label>
+    <br>
+
+    <input type="checkbox" name="frutas" id="banana" value="banana">
+    <label for="banana">Banana</label>
+    <hr>
+
+    <h1>Formulário de Viagem</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" value="">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ditige seu e-mail" value="">
+            <br>
+            <label for="genero">Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+
+            <label for="masculino">Masculino</label>
+
+
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Destino</legend>
+
+            <label for="destino">Selecione o destino:</label>
+
+            <select name="pais" id="pais">
+                <optgroup label="destino">
+                    <option value="brasil">Brasil</option>
+                    <option value="eua">Estados Unidos</option>
+                    <option value="canada">Canadá</option>
+                    <option value="japao">Japão</option>
+                    <option value="alemanha">Alemanha</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+
+            <label for="preferencia">Escolha suas preferências:</label>
+            <input type="checkbox" id="aventura" name="preferencia" value="aventura">
+
+            <label for="aventura">Aventura</label>
+
+
+            <input type="checkbox" id="praia" name="preferencia" value="praia">
+            <label for="praia">Praia</label>
+
+            <input type="checkbox" id="cultura" name="preferencia" value="cultura">
+            <label for="cultura">Cultura</label>
+        </fieldset>
+        <hr>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="80" rows="10"></textarea>
+        <hr>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <input type="color" name="" id="">
+</body>
+
+</html>
