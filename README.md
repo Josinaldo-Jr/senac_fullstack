@@ -33,7 +33,7 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
    - Imagem [css3logo](https://logodownload.org/wp-content/uploads/2017/04/css-3-logo.png)  
    - Imagem [html5logo](https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png)  
    - Imagem [jslogo](https://logospng.org/d/?l=aHR0cHM6Ly9sb2dvc3BuZy5vcmcvZG93bmxvYWQvamF2YXNjcmlwdC9sb2dvLWphdmFzY3JpcHQtaWNvbi01MTIucG5n)  
-   
+   - Imagem [BGt4](https://br.freepik.com/vetores-gratis/projeto-do-fundo-workteam_1024539.htm#query=trabalhe%20conosco&position=3&from_view=search&track=ais)   
 
    
 ## Autores
