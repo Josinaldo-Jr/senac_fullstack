@@ -5,7 +5,18 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: aliceblue;
+}
+
+#nome,
+#email,
+#nascimento,
+#telefone,
+#endereco,
+#estado,
+#senha,
+#confirmar {
+    width: 100%;
+    color: #7600f4;
 }
 
 body {
@@ -15,6 +26,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+h1,
+h2,
+legend, p, a {
+    color: aliceblue;
 }
 
 body>header,
@@ -53,11 +70,17 @@ form {
     gap: 5px;
 }
 
-form label, input {
+fieldset {
     width: 100%;
+    text-align: left;
+}
+
+form label,
+input {
     color: #bc84f7;
     text-align: left;
     padding: 5px;
+    margin-right: auto;
 }
 
 button {
@@ -78,14 +101,13 @@ strong {
 }
 
 article>footer {
-   line-height: 25px;
+    line-height: 25px;
 }
 
 a:hover {
-    color:aliceblue;
+    color: aliceblue;
 }
 
 body>footer a {
-    color:#7600f4;
+    color: #7600f4;
 }
-
