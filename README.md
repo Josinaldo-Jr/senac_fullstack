@@ -30,6 +30,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
    - Imagem [BGt3](https://www.freepik.com/free-vector/code-typing-concept-illustration_18840617.htm#query=frontend&position=19&from_view=search&track=sph)
    - Imagem [BGt2](https://www.freepik.com/free-vector/flat-online-education-concept-background_4360069.htm)   
    - Imagem [logosenac](https://www.gratispng.com/png-p8e2j6/)   
+   - Imagem [css3logo](https://logodownload.org/wp-content/uploads/2017/04/css-3-logo.png)  
+   - Imagem [html5logo](https://logodownload.org/wp-content/uploads/2016/10/html5-logo.png)  
+   - Imagem [jslogo](https://logospng.org/d/?l=aHR0cHM6Ly9sb2dvc3BuZy5vcmcvZG93bmxvYWQvamF2YXNjcmlwdC9sb2dvLWphdmFzY3JpcHQtaWNvbi01MTIucG5n)  
    
 
    
