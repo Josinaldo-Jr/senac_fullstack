@@ -11,6 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 50px;
 }
 
 main {
@@ -29,4 +31,11 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bola {
+    width: 80px;
+    height: 100px;
+    background: rgb(0, 140, 255);
+    border-radius: 100%;
 }
