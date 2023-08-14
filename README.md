@@ -7,13 +7,13 @@ Aqui contém os materiais, códigos e recursos utilizados nas aulas do curso de 
 
 ## Como Utilizar
 
-Como aluno do curso de Full Stack no SENAC, este repositório será uma ferramenta importante para o seu aprendizado. Aqui estão algumas dicas de como utilizá-lo:
+Como aluno do curso de Full Stack no SENAC, este repositório será uma ferramenta importante para registrar o aprendizado. Aqui estão algumas dicas de como utilizá-lo:
 
 **Clonar o Repositório:** Para ter acesso aos conteúdos, você pode clonar este repositório em seu ambiente local utilizando o seguinte comando:
 
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/Josinaldo-Jr/senac_fullstack.git
 ```
 
 - **Acessar Materiais:** Navegue pelas pastas para encontrar os materiais das aulas, como slides, códigos de exemplos e exercícios práticos.
@@ -22,7 +22,7 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 ## Atribuições
 
-- **Atribuição de Imagens:** Note que algumas imagens utilizadas neste repositório são criadas por artistas do [Freepik](https://br.freepik.com/), e são usadas de acordo com os termos de uso do Freepik, que permitem o uso gratuito com atribuição adequada. As imagens atribuídas ao Freepik estão listadas abaixo:
+- **Atribuição de Imagens:** Note que algumas imagens utilizadas neste repositório são criadas por artistas do [Freepik](https://br.freepik.com/), e são usadas de acordo com os termos de uso do Freepik, que permitem o uso gratuito com atribuição adequada. As imagens atribuídas ao Freepik e outros site estão listadas abaixo:
 
   
    - Imagem [Design](https://br.freepik.com/fotos-gratis/conceito-de-design-de-inspiracao-de-visao-de-progresso-de-ideias_16437978.htm#query=design%20e%20tecnologia&position=1&from_view=search&track=country_rows_v2)
