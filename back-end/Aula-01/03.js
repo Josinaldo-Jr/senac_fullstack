@@ -1,11 +1,16 @@
-let x = 5.5
-let y = 5.5
+// Testando incremento e decremento
+let x = 5.5;
+let y = 5.5;
 
-x --
-y ++
+x --;
+y ++;
 
+console.log(x, y);
+
+// Convertendo string em number
 let z = "85.7";
 
-Number.parseInt((z));
+let teste = parseInt(z);
 
-console.log(z);
+console.log(typeof(teste));
+
