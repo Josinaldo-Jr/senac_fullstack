@@ -33,16 +33,16 @@ if (mediaMensal < 500 & valorProduto < 30) {
     valorProduto += valorProduto * 0.1;
     alert("O produto recebeu o aumento de 10%. Ficando: " + valorProduto);
 } 
-else if (mediaMensal < 1200 & valorProduto < 80) {
+else if (mediaMensal >= 500 & mediaMensal < 1200 & valorProduto >= 30 & valorProduto < 80) {
     valorProduto += valorProduto * 0.15;
     parseFloat(valorProduto);
     alert("O produto recebeu o aumento de 15%. Ficando: " + valorProduto);
 }
-else if (mediaMensal >= 1200) {
+else if (mediaMensal >= 1200 & valorProduto >= 80) {
     valorProduto -= valorProduto * 0.2;    
     alert("O produto recebeu o desconto de 20%. Ficando: " + valorProduto);
 }
 else {
-    alert("O produto não será reajustado!");
+    alert("O valor do produto não será reajustado!");
 }
 
