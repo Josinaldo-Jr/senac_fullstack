@@ -6,7 +6,6 @@
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     color: whitesmoke;
-    
 }
 
 body {
@@ -14,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .header-top {
@@ -31,7 +31,7 @@ body {
     justify-content: center;
 }
 
-.img-section {
+.logo-header {
     width: 100%;
 }
 
@@ -104,20 +104,22 @@ li a:hover {
 .footer-bottom {
     width: 100%;
     display: flex; 
-    padding: 15px ;   
+    padding: 15px ; 
 }
 
 .social-article {
     width: 100%;
     display: flex;
-    flex-direction: column;  
-    gap: 15px;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
 }
 
 .social-header, .social-section {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 .socialA, .socialB, .socialC {
@@ -158,7 +160,7 @@ li a:hover {
 .social-section {
     width: 100%;    
     flex-direction: column;
-    gap: 10px;
+    align-items: center;    
 }
 
 .social-section p {
@@ -171,4 +173,17 @@ li a:hover {
 
 .social-section p a:hover {
     color: rgb(40, 40, 40);
+}
+
+/* Breakpoint Tablet */
+@media screen and (min-width: 399px) and (max-width: 550px) {
+
+    .logo-header {
+        width: 60%;        
+    }
+
+    .figure-main {
+        width: 60%;
+    }
+
 }
