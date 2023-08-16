@@ -102,7 +102,73 @@ li a:hover {
 }
 
 .footer-bottom {
-    background: rgb(167, 167, 167);
     width: 100%;
-    height: 150px;
+    display: flex; 
+    padding: 15px ;   
+}
+
+.social-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;
+}
+
+.social-header, .social-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialA, .socialB, .socialC {
+    width: 40px;
+    height: 40px;
+}
+
+.socialA {
+    background-image: url(./img/behance.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socialA:hover {
+    background-image: url(./img/behanceB.png);
+}
+
+.socialB {
+    background-image: url(./img/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socialB:hover {
+    background-image: url(./img/linkedinB.png);    
+}
+
+.socialC {
+    background-image: url(./img/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.socialC:hover {
+    background-image: url(./img/whatsappB.png);
+}
+
+.social-section {
+    width: 100%;    
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-section p {
+    color: rgb(40, 40, 40);
+}
+
+.social-section p a {
+    color: #29abe2;
+}
+
+.social-section p a:hover {
+    color: rgb(40, 40, 40);
 }
