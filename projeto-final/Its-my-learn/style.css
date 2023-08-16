@@ -76,6 +76,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 10px;
 }
@@ -115,7 +116,7 @@ li a:hover {
     gap: 20px;
 }
 
-.social-header, .social-section {
+.social-header-article, .social-section-article {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -157,33 +158,113 @@ li a:hover {
     background-image: url(./img/whatsappB.png);
 }
 
-.social-section {
+.social-section-article {
     width: 100%;    
     flex-direction: column;
     align-items: center;    
 }
 
-.social-section p {
+.social-section-article p {
     color: rgb(40, 40, 40);
 }
 
-.social-section p a {
+.social-section-article p a {
     color: #29abe2;
 }
 
-.social-section p a:hover {
+.social-section-article p a:hover {
     color: rgb(40, 40, 40);
 }
 
-/* Breakpoint Tablet */
-@media screen and (min-width: 399px) and (max-width: 550px) {
+/* Breakpoint Mobile */
+@media screen and (min-width: 400px) and (max-width: 500px) {
 
     .logo-header {
-        width: 60%;        
+        width: 50%;        
     }
 
     .figure-main {
-        width: 60%;
+        width: 50%;
     }
 
+    .section-article {
+        width: 80%;
+    }
+}
+
+/* Breakpoint Mobile/Tablet */
+@media screen and (min-width: 510px) and (max-width: 790px) {
+
+    .logo-header {
+        width: 40%;        
+    }
+
+    .figure-main {
+        width: 40%;
+    }
+
+    .section-article {
+        width: 80%;
+    }
+
+    .social-header-article {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Breakpoint Tablet/Desktop */
+@media screen and (min-width: 791px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .header-top {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;  
+    }
+
+    .section-header {
+        padding: 10px 30px;
+    }
+
+    .logo-header {
+        width: 25%; 
+    }
+
+    .nav-header {
+        justify-content: end; 
+        padding: 0 20px;       
+    }
+
+    .menu {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    .main-home {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .figure-main {
+        width: 30%;
+    }
+
+    .article-main {
+        width: 50%;
+    }
+
+    .section-article {
+        width: 80%;
+    }
+
+    .social-header-article {
+        justify-content: center;
+        gap: 20px;
+    }
 }
