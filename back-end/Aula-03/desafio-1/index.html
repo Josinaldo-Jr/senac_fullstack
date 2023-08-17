@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <!-- Incluindo os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #calculadoraForm {
+      width: 30%;
+    }  
+
+  </style>
+</head>
+<body class="container-fluid bg-dark text-light">
+  <main class="container mt-5 ml-auto mr-auto">
+    <h1>Calculadora:</h1>
+    <form id="calculadoraForm">
+      <section class="form-group">
+        <label for="num1">Número 1:</label>
+        <input type="number" class="form-control" id="numA" name="num1" required>
+      </section>
+      <section class="form-group">
+        <label for="num2">Número 2:</label>
+        <input type="number" class="form-control" id="numB" name="num2" required>
+      </section>
+      <section class="form-group">
+        <label for="operaracao">Operação:</label>
+        <select class="form-control" id="operar" name="operacao">
+          <option value="somar">Somar</option>
+          <option value="subtrair">Subtrair</option>
+          <option value="multiplicar">Multiplicar</option>
+          <option value="dividir">Dividir</option>
+        </select>
+      </section>
+      <button type="button" class="btn btn-primary" onclick="calculadora()">Calcular</button>
+    </form>
+    <section class="mt-3" id="resultado"></section>
+  </main>
+
+  <!-- Incluindo os arquivos JavaScript do Bootstrap (opcional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="./calculadora1.js"></script>
+</body>
+</html>
