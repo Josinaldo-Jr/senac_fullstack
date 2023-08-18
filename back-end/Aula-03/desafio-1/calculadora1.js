@@ -28,23 +28,27 @@ function calculadora() {
     const numA = parseFloat(document.getElementById("numA").value);
     const numB = parseFloat(document.getElementById("numB").value);
     const operar = document.getElementById("operar").value;
-    // let result;
+    let result;
 
     switch (operar) {
         case "somar":
+            result = numA + numB;
             alert(numA + numB)
             break;
 
         case "subtrair":
+            result = numA - numB;
             alert(numA - numB)
             break;
 
 
         case "multiplicar":
+            result = numA * numB;
             alert(numA * numB)
             break;
 
         case "dividir":
+            result = numA / numB;
             alert(numA / numB)
             break;
 
@@ -52,4 +56,6 @@ function calculadora() {
             alert("Erro! Digite novamente...")
             break;
     }
+
+    document.getElementById('resultado').innerHTML = "Resultado: " + result;
 }
