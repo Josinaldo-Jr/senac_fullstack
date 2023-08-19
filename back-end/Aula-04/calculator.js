@@ -1,8 +1,19 @@
 // 1-------------------------------
-function insert (value) {
-
+function insert(value) {
     let display = document.getElementById('result').innerHTML;
-    document.getElementById('result').innerHTML = display + value;
+    
+    // Verificar se o último caractere é um operador
+    let lastChar = display.charAt(display.length - 1);
+    let operators = "+-*/.";
+    
+    if (operators.includes(lastChar) && operators.includes(value)) {
+        // Substituir o último operador pelo novo
+        display = display.slice(0, -1) + value;
+    } else {
+        display += value;
+    }
+    
+    document.getElementById('result').innerHTML = display;
 }
 
 function clean() {
@@ -17,14 +28,16 @@ function back() {
 }
 
 function calculate() {
-
     let display = document.getElementById('result').innerHTML;
 
-    if (display){
-        document.getElementById('result').innerHTML = eval(display);
+    if (display) {
+        if (display.includes("/0")) {
+            document.getElementById('result').innerHTML = "Erro: Divisão por zero";
+        } else {
+            document.getElementById('result').innerHTML = eval(display);
+        }
+    } else {
+        document.getElementById('result').innerHTML = "Erro...";
     }
-    else {
-        document.getElementById('result').innerHTML = "Erro..."        
-    }    
 }
 // --------------------------------
