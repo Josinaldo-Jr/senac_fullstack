@@ -4,12 +4,17 @@ function insert(value) {
     
     // Verificar se o último caractere é um operador
     let lastChar = display.charAt(display.length - 1);
-    let operators = "+-*/.";
+    let operators = "+-*/.x";
     
-    if (operators.includes(lastChar) && operators.includes(value)) {
+    if (display.includes("Erro...")) {
+
+        display = value;
+
+    } else if (operators.includes(lastChar) && operators.includes(value)) {
         // Substituir o último operador pelo novo
         display = display.slice(0, -1) + value;
-    } else {
+    } 
+    else {
         display += value;
     }
     
@@ -34,10 +39,12 @@ function calculate() {
         if (display.includes("/0")) {
             document.getElementById('result').innerHTML = "Erro: Divisão por zero";
         } else {
-            document.getElementById('result').innerHTML = eval(display);
+                       
+            document.getElementById('result').innerHTML = eval(display.replace("x", "*"));
+            
         }
     } else {
-        document.getElementById('result').innerHTML = "Erro...";
+        document.getElementById('result').innerHTML = "Erro...";        
     }
 }
 // --------------------------------

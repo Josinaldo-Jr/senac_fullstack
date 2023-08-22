@@ -37,6 +37,7 @@ body {
     color: rgb(0, 179, 255);
     background-color: #111;
     padding: 0 10px;
+    word-break: break-all;
 }
 
 .buttons {
