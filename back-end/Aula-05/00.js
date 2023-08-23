@@ -1,19 +1,15 @@
 // 1-------------------------------
-alert("Escolha números referentes a x/y/z");
+let chico = 150;
+let ze = 110;
+let ano = 0;
 
-let x = parseInt(prompt("Digite um número inteiro para x: "));
-let y = parseInt(prompt("Digite um número inteiro para y: "));
-let z = parseInt(prompt("Digite um número inteiro para z: "));
+do {
 
-alert("---Menu----\nEscolha uma operação\n0: Sair\n1: Média Geométrica\n2: Média Ponderada\n3: Média Aritmética");
+    chico = chico + 2;
+    ze = ze + 3;
+    ano = ano + 1;     
 
-// do {
-
-//     chico = chico + 2;
-//     ze = ze + 3;
-//     ano = ano + 1;     
-
-//     console.log(ano);
+    console.log(ano);
     
-// } while (ze < chico);
+} while (ze < chico);
 // --------------------------------
