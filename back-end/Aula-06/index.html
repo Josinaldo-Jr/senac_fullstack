@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada de Multiplicação</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+        }
+
         body {
+            width: 100%;
+            height: 100vh;
             font-family: Arial, sans-serif;
             text-align: center;
+            background: rgb(39, 39, 39);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        main {
+            min-width: 250px;
+            width: 40%;
+            background: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            border-radius: 1%;
+            box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.055);
+        }
+        input {
+            width: 20%;
+            color: black;
+        }
+        button {
+            min-width: 150px;
+            width: 40%;
+            padding: 5px;
+            background: black;
+            border-radius: 1%;
         }
     </style>
 </head>
+
 <body>
-    <h1>Tabuada de Multiplicação</h1>
-    <label for="numero">Digite um número:</label>
-    <input type="number" id="numero">
-    <button id="calcular">Calcular Tabuada</button>
-    <div id="tabuada"></div>
+    <main>
+        <h1>Tabuada de Multiplicação</h1>
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero">
+        <button id="calcular">Calcular Tabuada</button>
+        <div id="tabuada"></div>
+    </main>
 
     <script src="./tabuada.js"></script>
 </body>
+
 </html>
