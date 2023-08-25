@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Introdução</title>
+</head>
+<body>
+    <script>
+        let notas = [];
+        let soma = 0;
+        let media = 0;
+        
+        
+
+        for (let i= 1; i <= 3; i++) {
+            let nota = parseInt(prompt(`Digite a ${i}ª nota: `)); 
+            notas.push(nota);
+            
+            soma += nota;
+        }     
+
+        media = soma / notas.length;
+           
+        alert(`As notas são: ${notas}.
+        A soma das notas é: ${soma}.
+        A média das notas é: ${media.toFixed(2)}`);
+
+        
+    </script>
+    
+</body>
+</html>
