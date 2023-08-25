@@ -16,15 +16,17 @@
     }
 
     body {
-      background-color: #121212;
+      background-color: #343a40;
       color: #ffffff;
     }
 
     main {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       height: 100vh;
+      gap: 10px;
+    
     }
 
     article {
@@ -32,6 +34,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      flex: 1;
     }
 
     h1 {
@@ -56,18 +59,47 @@
         <h1>Triângulo com Asteriscos</h1>
       </header>
       <p>
-        
+
         <script>
           let arvore = "";
           let resultado = "";
 
           for (let i = 1; i <= 10; i++) {
-            let star = " * "
-            arvore += star;
+            arvore += " * ";
             resultado += `${arvore}<br>`;
           }
           document.write(resultado);
         </script>
+
+        <!-- <script>
+        let resultado = "";
+
+        for (let i = 10; i >= 1; i--) {
+            let espacos = "".repeat(11 - i);
+            let asteriscos = " * ".repeat( i - 1);
+            resultado += espacos + asteriscos + "<br>";
+        }
+        document.write(resultado);
+    </script> -->
+
+      </p>
+    </article>
+
+    <article>
+      <header>
+        <h1>Triângulo com Asteriscos (Invertido)</h1>
+      </header>
+      <p>    
+
+        <script>
+        let result = "";
+
+        for (let i = 10; i >= 1; i--) {
+            let asteriscos = " * ".repeat( i - 1);
+            result +=  asteriscos + "<br>";
+        }
+        document.write(result);
+    </script>
 
       </p>
     </article>
