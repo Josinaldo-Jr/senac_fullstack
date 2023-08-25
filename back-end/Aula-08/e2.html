@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - II</title>
+</head>
+<body>
+    <script>
+
+        let numeros = [];
+        let soma = 0;
+        let maiores = [];     
+
+        for (let i = 1; i <= 82; i += 9) {
+          soma += i;
+          numeros.push(i);
+
+          if(i > 50) {
+            maiores.push(i);
+          }
+           
+        }     
+                  
+        alert(`
+        Os números gerados foram: ${numeros}.
+        A soma dos números é: ${soma}.        
+        `);
+
+        if (maiores.indexOf() > 50) {
+            alert(`Os números maiores que 50 são: ${maiores}`);
+        } else {
+            alert(`Não há nenhum número maior que 50!`);
+        }
+    </script>
+</body>
+</html>
