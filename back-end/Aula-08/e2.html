@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array - II</title>
 </head>
+
 <body>
     <script>
 
+        let variavel = parseInt(prompt("Digite um número para servir de variável: "));
         let numeros = [];
-        let soma = 0;
-        let maiores = [];     
+        let maiores = [];
 
-        for (let i = 1; i <= 82; i += 9) {
-          soma += i;
-          numeros.push(i);
+        for (let i = 1; numeros.length < 10; i += variavel) {
 
-          if(i > 50) {
-            maiores.push(i);
-          }
-           
-        }     
-                  
+            numeros.push(i);
+
+            if (i > 50) {
+                maiores.push(i);
+            }
+        }
+
         alert(`
-        Os números gerados foram: ${numeros}.
-        A soma dos números é: ${soma}.        
+        Os números gerados foram:
+        ${numeros}.               
         `);
 
-        if (maiores.indexOf() > 50) {
-            alert(`Os números maiores que 50 são: ${maiores}`);
+        if (maiores.length >= 1) {
+
+            maiores.forEach(function (item, indice, array) {
+                document.write(`${item} - ${indice} <br>`);
+});
+
         } else {
-            alert(`Não há nenhum número maior que 50!`);
+            document.write(`Não há número maior que 50!`);
         }
     </script>
 </body>
+
 </html>
