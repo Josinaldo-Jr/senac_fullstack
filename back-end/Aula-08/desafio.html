@@ -8,33 +8,32 @@
 </head>
 
 <body>
-    <script>
-        let lista = [];
-        
-        function adicionar(){
-
-        
-        let entrada = document.getElementById("entrada").value;
-        let result = document.getElementById("result").innerHTML;
-            
-            lista.push(document.write());
-            document.getElementById("result").innerHTML = lista;
-        }      
-
-    </script>
 
     <input type="text" name="entrada" id="entrada" placeholder="Digite uma nova tarefa...">
     <button type="submit" onclick="adicionar()">Adicionar</button>
 
-    <div></div>
+    <div id="result"></div> 
 
+<script>
+    
+let lista = [];
 
+function adicionar() {
 
-    <div id="result"></div>
-
-  
+    let entrada = document.getElementById("entrada").value;
+    let result = document.getElementById("result").innerHTML;
+    lista.push(entrada); 
+    
     
 
-</body> 
+    lista.forEach(function (item, indice, array) {
+        document.write(`Posição: ${indice} - Número: ${item} <br>`);
+});
+    
+}
+
+</script>
+
+</body>
 
 </html>
