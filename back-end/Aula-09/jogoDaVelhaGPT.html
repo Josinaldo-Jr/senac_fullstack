@@ -20,7 +20,16 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;      
+      align-items: center; 
+      justify-content: space-between;     
+    }
+
+    main {
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 15px;
+      justify-content: flex-start;
     }
 
     .board {
@@ -45,11 +54,20 @@
 
     .cell:hover{
       background: rgb(39, 39, 39);
+      color: aliceblue;
     }
 
     #winner {
+      min-height: 25px;
       color: aliceblue;
     }
+
+    button {
+      padding: 5px 15px;
+      color: black;
+    }
+
+ 
   </style>
 </head>
 
@@ -71,36 +89,33 @@
       <section class="cell" onclick="play(2, 1)"></section>
       <section class="cell" onclick="play(2, 2)"></section>
     </article>
-    <p id="winner"></p>
+
+    <section>
+      <p id="winner"></p> 
+      <button type="reset" onclick="reset()">Reset</button>     
+    </section> 
+    
   
   </main>
 
+  <footer></footer>
+
   <script>
-    const board = [
-      ['', '', ''],
-      ['', '', ''],
-      ['', '', '']
-    ];
+    const board = [['', '', ''], ['', '', ''], ['', '', '']];
 
     let currentPlayer = 'X';
     let gameOver = false;
 
     function checkWinner() {
       for (let i = 0; i < 3; i++) {
-        if (
-          board[i][0] === currentPlayer &&
-          board[i][1] === currentPlayer &&
-          board[i][2] === currentPlayer
-        ) {
+
+        if (board[i][0] === currentPlayer && board[i][1] === currentPlayer &&  board[i][2] === currentPlayer) {
           return true;
         }
-        if (
-          board[0][i] === currentPlayer &&
-          board[1][i] === currentPlayer &&
-          board[2][i] === currentPlayer
-        ) {
+        else if (board[0][i] === currentPlayer && board[1][i] === currentPlayer &&  board[2][i] === currentPlayer) {
           return true;
         }
+       
       }
       if (
         board[0][0] === currentPlayer &&
@@ -109,14 +124,16 @@
       ) {
         return true;
       }
-      if (
+      else if (
         board[0][2] === currentPlayer &&
         board[1][1] === currentPlayer &&
         board[2][0] === currentPlayer
       ) {
         return true;
-      }
+      } else {
       return false;
+      }
+      
     }
 
     function checkTie() {
@@ -131,6 +148,7 @@
     }
 
     function play(row, col) {
+        
       if (!gameOver && board[row][col] === '') {
         board[row][col] = currentPlayer;
         document.getElementById('board').children[row * 3 + col].innerHTML = currentPlayer;
@@ -146,6 +164,28 @@
         }
       }
     }
+
+    function reset() {
+            // Limpar a matriz
+            for (let i = 0; i < 3; i++){
+
+              for (let j = 0; j < 3; j++) {
+                board[i][j] = "";
+              }
+
+            }          
+
+            // Limpar o tabuleiro na página
+            const cell = document.getElementById("board").children;
+            for (let i = 0; i < cell.length; i++) {
+              cell[i].innerHTML = "";              
+            }
+
+            // // Resetar o winner
+            document.getElementById('winner').innerHTML = '';            
+            gameOver = false;
+           
+        }   
   </script>
 
 </body>
