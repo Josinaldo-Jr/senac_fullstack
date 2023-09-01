@@ -11,9 +11,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     text-align: center;
+}
+
+body>header {
+    background: #2e2e2e;
+    width: 100%;    
+}
+
+header {
+    padding: 15px;
 }
 
 h1 {
@@ -72,4 +81,12 @@ span {
 .edit-button:hover,
 .delete-button:hover {
     background-color: #555;
+}
+
+main {
+    height: 100vh;
+}
+
+article>section {
+    min-height: 500px;
 }
