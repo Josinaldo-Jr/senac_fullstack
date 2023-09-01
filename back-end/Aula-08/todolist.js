@@ -1,4 +1,3 @@
-
 const lista = [];
 
 function adicionar() {
