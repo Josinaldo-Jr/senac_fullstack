@@ -30,8 +30,8 @@ h1 {
 }
 
 input {
-    padding: 10px;
-    font-size: 16px;
+    padding: 5px;
+    
 }
 
 button {
@@ -90,3 +90,19 @@ main {
 article>section {
     min-height: 500px;
 }
+
+#entradaD{
+    width: 13%;
+}
+
+.box, .caixa1 {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.caixa1 {
+    padding: 20px;
+    text-align: left;
+}
+

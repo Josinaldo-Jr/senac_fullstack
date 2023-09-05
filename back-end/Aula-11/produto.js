@@ -17,6 +17,7 @@ function adicionar() {
     };
 
     lista.push(produto);
+
     
 
     const dadosUl = document.getElementById('result');
