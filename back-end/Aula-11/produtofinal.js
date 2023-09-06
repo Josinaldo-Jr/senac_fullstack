@@ -49,10 +49,10 @@ function deletar(indice) {
 
 function editar(indice) {
    
-const entradaA = document.getElementById("entradaA").value = prompt("digite o valor para A: ");
-    const entradaB = document.querySelector('input[name="entradaB"]:checked').value = prompt("digite o valor para B: ");
-    const entradaC = document.getElementById("entradaC").value = prompt("digite o valor para C: ");
-    const entradaD = document.getElementById("entradaD").value = prompt("digite o valor para D: ");
+const entradaA = document.getElementById("entradaA").value = prompt("Digite o nome do Produto: ");
+    const entradaB = document.querySelector('input[name="entradaB"]:checked').value = prompt("Digite a Categoria: ");
+    const entradaC = document.getElementById("entradaC").value = prompt("Digite o nome do Fornecedor: ");
+    const entradaD = document.getElementById("entradaD").value = prompt("Digite a Quantidade: ");
 
     const produtoNovo = {
         entradaA: entradaA,
