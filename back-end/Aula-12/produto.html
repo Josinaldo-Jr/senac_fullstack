@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="./todolist.css">
+    <script src="./produto.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gerenciamento de Estoque - Joel Computação</h1>
+    </header>
+
+    <main>
+        <article>
+            <header>
+
+                <form id="entrada" action="">
+
+                    <fieldset class="caixa1">
+                        <legend class="leg1">Informações do Produto</legend>
+                        Nome do Produto: <input type="text" id="nome"><br> 
+
+                        Categoria:
+                        
+                        <input type="radio" id="cat" name="categoria" value="Hardware">
+                        <label for="hardware"> Hardware </label>
+
+
+                        <input type="radio" id="cat" name="categoria" value="Armazenamento">
+                        <label for="armazenamento"> Armazenamento </label>
+
+
+                        <input type="radio" id="cat" name="categoria" value="Computadores">
+                        <label for="computadores"> Computadores </label><br>
+
+                        Fornecedor: <select name="fornecedor" id="fornecedor" name="fornecedor">
+                            <option selected disabled>Selecione...</option>
+                            <option value="Jundi HD's"> Jundi HD's </option>
+                            <option value="Bruno Processadores"> Bruno Processadores </option>
+                            <option value="Notebooks da Bia"> Notebooks da Bia </option>
+                            <option value="Sobrinho Computadores"> Sobrinho Computadores </option>
+                        </select><br>
+
+                        <!-- <label for="estoque">Estoque: </label>
+                         <input type="number" id="estoque" name="estoque"> -->
+
+
+                    </fieldset><br>
+
+                    <input type="button" value="Cadastrar" onclick="adicionar()" class="botao">
+                </form>
+                
+
+                
+            </header>
+            
+            <section>
+                <ul id="result"></ul>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Estoque: <input type="number" id="entrada">
+Nome do Produto: <input type="text" id="entrada">
+   <h1>Lista de Tarefas</h1>
+   <input type="text" name="nomeProduto" id="entrada" placeholder="Digite um novo produto...">
+   <input type="radio" name="tipoProduto" id="entrada"><label for="Peça"> Peça </label><input
+       type="radio" name="tipoProduto" id="entrada">
+
+   <button type="submit" onclick="adicionar()">Adicionar</button> -->

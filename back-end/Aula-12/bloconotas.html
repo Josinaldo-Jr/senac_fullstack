@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas Online</title>
+    <link rel="stylesheet" href="./bloconotas.css">
+    <script src="./produtofinal.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>SISTEMA DE BLOCO DE NOTAS ONLINE</h1>
+    </header>
+
+    <main>
+        <article>
+                
+             
+                <form id="box" action="">
+
+                    <fieldset class="caixa1">
+                        <legend class="leg1">Informações da Nota Online</legend>
+
+                        <div>
+                            <label for="entradaA">Título:</label>
+                            <input type="text" name="entradaA" id="entradaA"
+                                placeholder="Digite um título para a nota."><br>
+                        </div>                     
+
+                        <div>
+                            <label for="entradaB">Contéudo:</label>
+                            <input type="text" name="entradaB" id="entradaB"><br>
+                        </div>   
+                        
+                        <div>
+                            <label for="entradaC">Data de entrega:</label>
+                            <input type="date" id="entradaC" name="entradaC">  
+                                   
+                        </div>
+
+
+                    </fieldset><br>
+
+                  
+                    <input type="button" value="Cadastrar" onclick="adicionar()" class="botao">
+                </form>
+
+            
+            <section id="result" class="items">
+                
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
