@@ -22,18 +22,18 @@ const path = require('path');
 //   res.send('Hello, world!');
 // });
 
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 
-// app.get('/about', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'about.html'));
-// });
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'about.html'));
+});
 
-// app.get('/contact', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'contact.html'));
-// });
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'contact.html'));
+});
 
 app.listen(port, () => {
   console.log(`App de Exemplo escutando na porta ${port}!

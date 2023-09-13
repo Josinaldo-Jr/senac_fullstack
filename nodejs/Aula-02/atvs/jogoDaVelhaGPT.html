@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="./jogoDaVelhaGPT.css">
+  <script src="./jogoDaVelhaGPT.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Jogo da Velha</h1>  
+  </header>
+
+  <main> 
+    <article class="board" id="board">
+      <section class="cell" onclick="play(0, 0)"></section>
+      <section class="cell" onclick="play(0, 1)"></section>
+      <section class="cell" onclick="play(0, 2)"></section>
+      <section class="cell" onclick="play(1, 0)"></section>
+      <section class="cell" onclick="play(1, 1)"></section>
+      <section class="cell" onclick="play(1, 2)"></section>
+      <section class="cell" onclick="play(2, 0)"></section>
+      <section class="cell" onclick="play(2, 1)"></section>
+      <section class="cell" onclick="play(2, 2)"></section>
+    </article>
+    <section>
+      <p id="winner"></p> 
+      <button type="reset" onclick="reset()">Reset</button>     
+    </section> 
+  </main>
+
+  <footer></footer>
+</body>
+</html>

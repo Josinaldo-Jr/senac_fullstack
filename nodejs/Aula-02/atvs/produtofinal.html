@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-Array: To do List</title>
+    <link rel="stylesheet" href="./produtofinal.css">
+    <script src="./produtofinal.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Joel Computação</h1>
+    </header>
+
+    <main>
+        <article>
+            <header>
+
+                <h1>Gerenciamento de Estoque:</h1>
+             
+                <div class="box">
+
+                    <fieldset class="caixa1">
+                        <legend class="leg1">Informações do Produto</legend>
+
+                        <div>
+                            <label for="entradaA">Nome do Produto:</label>
+                            <input type="text" name="entrada" id="entradaA"
+                                placeholder="Digite o nome do produto..."><br>
+                        </div>
+
+                        <div>
+                            <label for="entradaA">Categoria:</label>
+                            <input type="radio" id="entradaB" name="entradaB" value="Hardware">
+                            <label for="hardware"> Hardware </label>
+
+
+                            <input type="radio" id="entradaB" name="entradaB" value="Armazenamento">
+                            <label for="armazenamento"> Armazenamento </label>
+
+
+                            <input type="radio" id="entradaB" name="entradaB" value="Computadores">
+                            <label for="computadores"> Computadores </label><br>
+                        </div>
+
+                        <div>
+                            <label for="entradaC">Fornecedor:</label>
+                            <select name="entradaC" id="entradaC">
+                                <option selected disabled>Selecione...</option>
+                                <option value="Jundi HD's"> Jundi HD's </option>
+                                <option value="Bruno Processadores"> Bruno Processadores </option>
+                                <option value="Notebooks da Bia"> Notebooks da Bia </option>
+                                <option value="Sobrinho Computadores"> Sobrinho Computadores </option>
+                            </select><br>
+                        </div>
+
+                        <div>
+
+                            <label for="entradaD">Estoque:</label>
+                            <input type="number" id="entradaD" name="entradaD">
+                        </div>
+
+
+                    </fieldset><br>
+
+                    <button type="submit" onclick="adicionar()">Cadastrar</button>
+                </div>
+
+            </header>
+            <section>
+                <ul id="result"></ul>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
