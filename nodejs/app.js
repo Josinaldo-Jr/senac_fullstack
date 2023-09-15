@@ -50,14 +50,25 @@ app.get('/produtofinal', (req, res) => {
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/aula03', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/Aula03', 'index.html'))
+  res.sendFile(path.join(__dirname, 'views/Aula03', 'index.html'));
 });
 
 app.post('/parabens', (req, res) => {
   app.use(express.static(path.join(__dirname, 'views/Aula03')));
-  res.sendFile(path.join(__dirname, 'views/Aula03', 'parabens.html'))
+  res.sendFile(path.join(__dirname, 'views/Aula03', 'parabens.html'));
 });
 // --------------------------
+
+// Aula 04:
+app.post('/user', (req, res) => {
+  const user = req.body;
+  console.log(user);
+
+  res.json(user);
+
+});
+
+// --------------------------
 app.listen(port, () => {
-  console.log(`Example app listening on port ${host}:${port}`)
+  console.log(`Example app listening on port ${host}:${port}`);
 });
