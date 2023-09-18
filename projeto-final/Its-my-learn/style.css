@@ -20,16 +20,24 @@ body {
     background: rgb(40, 40, 40);
     width: 100%;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 3px 3px  #00000030;
-    padding: 15px; 
+    box-shadow: 0px 3px 3px rgba(40, 40, 40, 0.3);
+    padding: 15px;
 }
 
 .section-header {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+}
+
+.material-symbols-outlined {
+    margin-left: auto;
+}
+
+.header-top>.material-symbols-outlined:hover {
+    color: #29abe2;
+    cursor: pointer;
 }
 
 .logo-header {
@@ -42,20 +50,42 @@ body {
 }
 
 .menu {
-    width: 100%; 
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 100%;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.menu li a {
+.menu>li>a {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-li a:hover {
-    color:#29abe2;
-    border-bottom: solid 1px #29abe2;
+li>a:hover {
+    color: #29abe2;
+}
+
+li:hover {
+    background: rgb(60, 60, 60);
+    border-left: solid 1px #29abe2;
+    padding: 0 5px;
+}
+
+.user,
+.user>.material-symbols-outlined {
+    color: #29abe2;
+}
+
+.user>.material-symbols-outlined {
+    font-size: 15px;
+}
+
+.user:hover {
+    color: whitesmoke;
+
+    .material-symbols-outlined {
+        color: whitesmoke;
+    }
 }
 
 .main-home {
@@ -89,6 +119,7 @@ li a:hover {
 
 .article-main p {
     color: rgb(40, 40, 40);
+    text-align: justify;
 }
 
 .button-footer {
@@ -104,26 +135,29 @@ li a:hover {
 
 .footer-bottom {
     width: 100%;
-    display: flex; 
-    padding: 15px ; 
+    display: flex;
+    padding: 20px;
 }
 
 .social-article {
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.social-header-article, .social-section-article {
+.social-header-article,
+.social-section-article {
     width: 100%;
     display: flex;
     justify-content: space-around;
     gap: 10px;
 }
 
-.socialA, .socialB, .socialC {
+.socialA,
+.socialB,
+.socialC {
     width: 40px;
     height: 40px;
 }
@@ -145,7 +179,7 @@ li a:hover {
 }
 
 .socialB:hover {
-    background-image: url(./img/linkedinB.png);    
+    background-image: url(./img/linkedinB.png);
 }
 
 .socialC {
@@ -159,9 +193,9 @@ li a:hover {
 }
 
 .social-section-article {
-    width: 100%;    
+    width: 100%;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .social-section-article p {
@@ -177,16 +211,10 @@ li a:hover {
 }
 
 /* Breakpoint Mobile */
-@media screen and (max-width: 280px) {
-    .menu {
-        flex-direction: column;
-    }
-}
-/* Breakpoint Mobile */
 @media screen and (min-width: 281px) and (max-width: 499px) {
 
     .logo-header {
-        width: 50%;        
+        width: 50%;
     }
 
     .figure-main {
@@ -207,11 +235,22 @@ li a:hover {
 @media screen and (min-width: 500px) and (max-width: 790px) {
 
     .logo-header {
-        width: 40%;        
+        width: 40%;
     }
 
     .figure-main {
         width: 40%;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    li:hover {
+        background: none;
+        border-left: none;
+        padding: 0;
     }
 
     .section-article {
@@ -225,27 +264,37 @@ li a:hover {
 }
 
 /* Breakpoint Tablet/Desktop */
-@media screen and (min-width: 791px) and (max-width: 1300px) {
+@media screen and (min-width: 791px) {
 
     .header-top {
         display: flex;
-        flex-direction: row; 
-        justify-content: space-around;  
-    }   
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     .logo-header {
-        width: 30%; 
+        width: 30%;
     }
 
     .nav-header {
         width: 100%;
-        justify-content: center; 
+        justify-content: center;
+    }
+
+    #teste {
+        display: none;
     }
 
     .menu {
-        width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        gap: 30px;
+    }
+
+    li:hover {
+        background: none;
+        border-left: none;
+        padding: 0;
     }
 
     .main-home {
@@ -270,6 +319,3 @@ li a:hover {
         gap: 20px;
     }
 }
-
-/* Breakpoint Tablet/Desktop */
-@media screen and (min-width: 791px) and (max-width: 1300px) {}
