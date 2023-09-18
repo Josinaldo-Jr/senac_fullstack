@@ -127,6 +127,7 @@ li:hover {
     padding: 10px 30px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .button-footer:hover {
@@ -211,7 +212,7 @@ li:hover {
 }
 
 /* Breakpoint Mobile */
-@media screen and (min-width: 281px) and (max-width: 499px) {
+@media screen and (min-width: 281px) and (max-width: 499px) { 
 
     .logo-header {
         width: 50%;
@@ -270,10 +271,11 @@ li:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
+    }   
 
     .logo-header {
         width: 30%;
+        margin-left: 10%;
     }
 
     .nav-header {
@@ -281,14 +283,15 @@ li:hover {
         justify-content: center;
     }
 
-    #teste {
+    #menu-mobile {
         display: none;
     }
 
     .menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        gap: 0;
     }
 
     li:hover {
@@ -311,7 +314,7 @@ li:hover {
     }
 
     .section-article {
-        width: 80%;
+        width: 60%;
     }
 
     .social-header-article {

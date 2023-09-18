@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's My Learn | Início </title>
+    <title>It's My Learn - Início </title>
     <link rel="shortcut icon" href="./img/LogoIcone.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 
 <body>
     <header class="header-top">
-        <span class="material-symbols-outlined" id="teste" onclick="activeMenu()">menu</span>
+        <span class="material-symbols-outlined" id="menu-mobile" onclick="activeMenu()">menu</span>
         <section class="section-header">
             <a href="./index.html"> <img class="logo-header" src="./img/Logo2.png" alt="Logo it's my learn"></a>
         </section>
@@ -41,7 +41,7 @@
                 <h1>It's my LEARN</h1>
             </header>
             <section class="section-article">
-                <p>Este site é crucial para o meu projeto final no curso de Desenvolvimento Fullstack - Senac. Aqui
+                <p>Este site é faz parte do meu projeto final no curso de Desenvolvimento Fullstack - Senac. Aqui
                     apresento minha jornada de estudos na área, incluindo referências, dicas e links.
                 </p>
                 <br>
@@ -55,7 +55,7 @@
                 </p>
             </section>
             <footer class="footer-article">
-                <button class="button-footer"><a href="#">Cadastrar</a></button>
+                <a href="./login.html"><button class="button-footer">Login</button> </a>
             </footer>
         </article>
     </main>
@@ -90,22 +90,25 @@
     </footer>
     <script>
 
-        if (teste.style.display == "none") {
-            menu.style.display = "flex";
-        } 
+        function ajustarMenu() {
+            if (window.innerWidth > 792) {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
 
         function activeMenu() {
             if (menu.style.display == "flex") {
                 menu.style.display = "none";
-            }           
+            }
             else {
                 menu.style.display = "flex";
             }
-
-            if (teste.style.display == "none") {
-                menu.style.display = "flex";
-            }
         }
+
+        window.addEventListener('load', ajustarMenu);
+        window.addEventListener('resize', ajustarMenu);
     </script>
 
 </body>
