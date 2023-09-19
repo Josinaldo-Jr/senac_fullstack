@@ -233,7 +233,7 @@ li:hover {
 }
 
 /* Breakpoint Mobile/Tablet */
-@media screen and (min-width: 500px) and (max-width: 790px) {
+@media screen and (min-width: 500px) and (max-width: 890px) {
 
     .logo-header {
         width: 40%;
@@ -265,7 +265,7 @@ li:hover {
 }
 
 /* Breakpoint Tablet/Desktop */
-@media screen and (min-width: 791px) {
+@media screen and (min-width: 891px) {
 
     .header-top {
         display: flex;
@@ -288,9 +288,10 @@ li:hover {
     }
 
     .menu {
+        width: 80%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         gap: 0;
     }
 
