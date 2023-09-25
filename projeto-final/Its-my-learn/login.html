@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -32,20 +33,41 @@
             </ul>
         </nav>
     </header>
-    <main class="main-home">
+    <main class="main-login">
         <figure class="figure-main">
-            <img src="./img/Boy.svg" alt="Garoto estudando em cima dos livros.">
+            <img src="./img/Boy2.svg" alt="Garoto estudando em cima dos livros.">
         </figure>
-        <article class="article-main">
-            <header class="header-article">
-                <h1>título</h1>
+        <article class="article-login">
+            <header>
+                <h1 class="material-icons">
+                    person_outline
+                </h1>
             </header>
-            <section class="section-article">
-                <p>Conteúdo
-                </p>             
-            </section>
-            <footer class="footer-article">
-                <a href="./login.html"><button class="button-footer">Login</button> </a>
+
+            <form action="./index.html" method="POST">
+
+                <fieldset>
+                    <legend></legend>
+                    <label for="email" class="material-icons">
+                        person
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail." required>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <label for="senha" class="material-icons">
+                        lock
+                    </label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha." required>
+                </fieldset>
+
+                <button type="submit">Login</button>
+
+            </form>
+            <footer>
+                <p><a href="#">Esqueceu a senha?</a> ou <a href="#">Não tem cadastro?</a></p>
             </footer>
         </article>
     </main>
