@@ -1,0 +1,8 @@
+Iniciamos o projeto
+npm init -y
+
+instalando dependecias:
+express => servidor
+nodemon => atualiza em tempo real
+knex => mediador com o banco de dados
+cors => verificação das requisições
