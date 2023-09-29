@@ -1,12 +1,14 @@
 const knex = require('knex')({
-    client: 'mysql',
+    client: 'mysql2',
     connection: {
       host : 'localhost',
-      port : 3000,
-      user : 'sa',
-      password : 'sa',
+      user : 'root',
+      password : 'senac@1',
       database : 'escola'
     }
   });
 
   module.exports = knex; 
+
+
+

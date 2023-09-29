@@ -1,4 +1,4 @@
-const database = require('../controllers/connection'); // importa as variaveis de conexão
+const database = require('../databases/connection'); // importa as variaveis de conexão
 
 class AlunoController {
 
@@ -13,6 +13,14 @@ class AlunoController {
         }).catch(error => {
             console.log(error);
         })
+    }
+
+    listarAluno(request) {
+    const search = request.query.search;
+
+    const alunos =  database.list(search);
+
+    return alunos;
     }
 }
 

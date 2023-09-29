@@ -6,6 +6,6 @@ const AlunoController = require('../controllers/AlunoController') // importando 
 
 router.post('/novoAluno', AlunoController.novoAluno);
 router.post('/listarAluno', AlunoController.listarAluno);
-router.post('/buscarAluno/:matricula', AlunoController.buscarAluno);
+// router.post('/buscarAluno/:matricula', AlunoController.buscarAluno);
 
 module.exports = router; 

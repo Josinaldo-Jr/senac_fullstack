@@ -1,3 +1,4 @@
+
 POST http://localhost:3000/novoAluno
 Content-Type: application/json
 
@@ -11,9 +12,21 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/listarAlunos
-
+GET http://localhost:3000/listarAlunos?search=
 
 ###
 
-PUT http://localhost:3000/listarAlunos
+PUT http://localhost:3000/editarAluno
+Content-Type: application/json
+
+{
+    "matricula": "123",
+    "nome": "Joel de Oliveira Santos",
+    "turma": "3º Ano info",
+    "email": "teste@gmail.com",
+    "genero": "M"
+}
+
+###
+
+DELETE http://localhost:3000/deletarAluno
