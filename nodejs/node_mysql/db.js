@@ -1,33 +1,33 @@
-const users = [{
-    id: 1,
-    nome: "Joel",
-    idade: 28,
-    uf: "RN"
-}];
+const mysql = require("mysql2/promise");
 
-function insertUser(user){
-    users.push(user);
+const client = mysql.createPool(process.env.CONNECTION_STRING);
+
+// cadastra usuário
+async function insertUser(user){
+    const values = [user.id, user.nome, user.idade, user.uf];
+    await client.query("INSERT INTO user (id, nome, idade, uf) VALUES (?,?,?,?)", values);
 }
 
-function selectUsers(id){
-    return users.find(c => c.id === id);
+// listar usuários por id
+async function selectUsers(id){
+    const results = await client.query("SELECT * FROM user WHERE id=?;", [id]);
+    return results[0];
 }
 
-function selectUser(id){
-    return users;
+// listar usuários 
+async function selectUser(){
+    const results = await client.query("SELECT * FROM user;");
+    return results[0];
 }
 
-function updateUser(id, userData){
-    const user = users.find(c => c.id === id);
-    if(!user)  return;
-    user.nome = userData.nome;
-    user.idade = userData.idade;
-    user.uf = userData.uf;
+async function updateUser(id, user){
+    const values = [user.nome, user.idade, user.uf, id];
+    await client.query("UPDATE user SET nome=?, idade=?, uf=?WHERE id=?", values);
 }
 
-function deleteUser(id){
-    const index = users.find(c => c.id === id);
-    users.splice(index, 1);
+async function deleteUser(id) {
+    const values = [id];
+    await client.query("DELETE FROM user WHERE id=?", values);
 }
 
 module.exports = {

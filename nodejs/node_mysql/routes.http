@@ -2,27 +2,27 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": 0,
+    "id": 5,
     "nome": "Jekinha",
     "idade": 20,
     "uf": "PB"
 }
 
 ###
-GET http://localhost:3000/users
+GET http://localhost:3000/users/
 
 
 ###
-PATCH http://localhost:3000/users/2
+PATCH http://localhost:3000/users/5
 Content-Type: application/json
 
 {
-    "nome": "Jessy",
+    "nome": "Jessy Mozinha",
     "idade": 27,
     "uf": "RN"
 }
 
 
 ###
-DELETE http://localhost:3000/users/2
+DELETE http://localhost:3000/users/5
 Content-Type: application/json

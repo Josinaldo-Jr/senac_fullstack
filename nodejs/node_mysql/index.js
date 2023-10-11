@@ -13,32 +13,34 @@ const app = express();
 // para reconhecer arquivo json
 app.use(express.json());
 
-app.delete('/users/:id', (req, res) => {
+app.delete('/users/:id', async (req, res) => {
     const id = parseInt(req.params.id);
-    db.deleteUser(id);
+    await db.deleteUser(id);
     res.sendStatus(204);
 })
 
-app.patch('/users/:id', (req, res) => {
+app.patch('/users/:id', async (req, res) => {
     const id = parseInt(req.params.id);
     const user = req.body;
-    db.updateUser(id, user);
+    await db.updateUser(id, user);
     res.sendStatus(200);
 })
 
-app.post('/users', (req, res) => {
+app.post('/users', async (req, res) => {
     const user = req.body;
-    db.insertUser(user);
+    await db.insertUser(user);
     res.sendStatus(201);
 })
 
-app.get('/users/:id', (req, res) => {
+app.get('/users/:id', async (req, res) => {
     const id = parseInt(req.params.id);
-    res.json(db.selectUsers(id));
+    const results = await db.selectUsers(id);
+    res.json(results);
 })
 
-app.get('/users', (req, res) => {
-    res.json(db.selectUser());   
+app.get('/users', async (req, res) => {
+    const results = await db.selectUser();
+    res.json(results);   
 })
 
 // rota onde fornece informação (get)
