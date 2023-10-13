@@ -59,6 +59,7 @@ body {
 
 .menu>li>a {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    transition: color 0.3s;
 }
 
 li>a:hover {
@@ -74,6 +75,7 @@ li:hover {
 .user,
 .user>.material-symbols-outlined {
     color: #29abe2;
+    transition: color 0.3s;
 }
 
 .user>.material-symbols-outlined {
@@ -88,7 +90,7 @@ li:hover {
     }
 }
 
-.main-home, .main-login {
+.main-base {
     color: whitesmoke;
     width: 100%;
     display: flex;
@@ -112,11 +114,10 @@ li:hover {
 }
 
 .article-login h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 36px;
-    color: whitesmoke;
-    background: rgb(60, 60, 60);
+    color: #29abe2;
     padding: 15px;
-    border-radius: 100%;
 }
 
 .article-main h1 {
@@ -136,6 +137,7 @@ li:hover {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .button-footer:hover {
@@ -169,6 +171,7 @@ li:hover {
 .socialC {
     width: 40px;
     height: 40px;
+    transition: background 0.3s;
 }
 
 .socialA {
@@ -213,21 +216,13 @@ li:hover {
 
 .social-section-article p a {
     color: #29abe2;
+    transition: color 0.3s;
 }
 
 .social-section-article p a:hover {
     color: rgb(40, 40, 40);
 }
 
-/* Login content */
-.main-login> .article-login {
-    background: blue;
-}
-
-
-form {
-    background: red;
-}
 .material-icons {
     color: rgb(40, 40, 40);
 }
@@ -322,7 +317,7 @@ form {
         padding: 0;
     }
 
-    .main-home, .main-login {
+    .main-base {
         flex-direction: row;
         justify-content: center;
     }
@@ -343,4 +338,68 @@ form {
         justify-content: center;
         gap: 20px;
     }
+}
+
+/* -------------------------------------------------- */
+
+/* Formulário estilizado */
+fieldset {
+    border: none;
+    display: flex;
+    gap: 10px;   
+}
+
+legend {
+    color: #29abe2;
+}
+
+form {
+    background:  whitesmoke;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #29abe2;
+    color:  whitesmoke;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: rgb(40, 40, 40);
+}
+
+.article-login-footer > p, .article-login-footer >p a {
+    color: rgb(40, 40, 40);
+}
+
+.article-login-footer >p a:hover {
+    color: #29abe2;
+}
+
+
+
+
+@media screen and (min-width: 891px) {
+
+    .article-login {
+       width: 40%;
+    }
+
 }
