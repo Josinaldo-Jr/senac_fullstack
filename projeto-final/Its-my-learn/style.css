@@ -103,7 +103,7 @@ li:hover {
     width: 80%;
 }
 
-.article-main, .article-login {
+.article-main, .article-login, .article-recsenha {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -113,11 +113,16 @@ li:hover {
     padding: 10px;
 }
 
-.article-login h1 {
+.article-login h1, .article-recsenha h1 {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 36px;
     color: #29abe2;
     padding: 15px;
+    text-align: center;
+}
+
+.article-recsenha p {
+    color: rgb(40, 40, 40);
 }
 
 .article-main h1 {
@@ -342,11 +347,12 @@ li:hover {
 
 /* -------------------------------------------------- */
 
-/* Formulário estilizado */
+/* Formulário estilizado: Login/Esqueceu a Senha */
 fieldset {
     border: none;
     display: flex;
-    gap: 10px;   
+    gap: 10px;  
+    justify-content: flex-start;
 }
 
 legend {
@@ -359,6 +365,12 @@ form {
     border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    color: rgb(40, 40, 40);
 }
 
 form input {
@@ -368,6 +380,7 @@ form input {
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    color: rgb(40, 40, 40);
 }
 
 form button {
@@ -393,12 +406,19 @@ form button:hover {
     color: #29abe2;
 }
 
+.article-recsenha form {
+    width: 80%;
+}
+
+.article-recsenha form legend {
+    text-align: left;
+}
 
 
 
 @media screen and (min-width: 891px) {
 
-    .article-login {
+    .article-login, .article-recsenha {
        width: 40%;
     }
 
