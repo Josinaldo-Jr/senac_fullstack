@@ -423,3 +423,44 @@ form button:hover {
     }
 
 }
+/* Fim do formulário estilizado: Login/Esqueceu a Senha */
+
+
+/* My Learns*/
+
+/* Adicione essas regras ao seu arquivo de estilo CSS */
+
+.portfolio-card {
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.portfolio-card h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 24px;
+    color: #29abe2;
+}
+
+.portfolio-card p {
+    color: rgb(40, 40, 40);
+}
+
+.activity-button {
+    background: #29abe2;
+    color: whitesmoke;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.activity-button:hover {
+    background: rgb(40, 40, 40);
+}
