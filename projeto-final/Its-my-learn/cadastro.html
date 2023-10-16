@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's My Learn - Login </title>
+    <title>It's My Learn - Cadastro </title>
     <link rel="shortcut icon" href="./img/LogoIcone.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,12 +40,21 @@
         <article class="article-login">
             <header>
                 <h1>
-                    Login
+                    Cadastro do Usuário
                 </h1>
                
             </header>
 
             <form action="./index.html" method="POST">
+
+                <fieldset>
+                    <legend>Nome:</legend>
+                    <label for="nome" class="material-icons">
+                        person
+                    </label>
+                    <input type="nome" id="nome" name="nome" placeholder="Digite seu nome." required>
+                </fieldset>
+
 
                 <fieldset>
                     <legend>Email:</legend>
@@ -63,11 +72,11 @@
                     <input type="password" id="senha" name="senha" placeholder="Digite sua senha." required>
                 </fieldset>
 
-                <button type="submit">Entrar</button>
+                <button type="submit">Cadastrar</button>
 
             </form>
             <footer class="article-login-footer">
-                <p><a href="./esqueceu_senha.html">Esqueceu a senha?</a> ou <a href="./cadastro.html">Não tem cadastro?</a></p>
+                <p>Algum erro?<a href="https://whats.link/josinaldosouzajr"> Fale comigo.</a> </p>
             </footer>
         </article>
     </main>
