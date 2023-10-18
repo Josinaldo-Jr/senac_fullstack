@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's My Learn - My Learns </title>
+    <title>It's My Learn - Atividade 03 </title>
     <link rel="shortcut icon" href="./img/LogoIcone.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,6 @@
         <section class="section-header">
             <a href="./index.html"> <img class="logo-header" src="./img/Logo2.png" alt="Logo it's my learn"></a>
         </section>
-
         <nav class="nav-header">
             <ul class="menu" id="menu">
                 <li><a href="./index.html">Início</a></li>
@@ -35,39 +34,19 @@
             </ul>
         </nav>
     </header>
-
     <main class="main-base">
         <figure class="figure-main">
             <img src="./img/Boy.svg" alt="Garoto estudando em cima dos livros.">
         </figure>
         <article class="article-main">
             <header class="header-article">
-                <h1>My Learns</h1>
+                <h1>Atividade 03</h1>
             </header>
-            
-            <section class="portfolio-card">
-                <img src="./img/atividade1.jpg" alt="Atividade 1">
-                <h2>Nome da Atividade 1</h2>
-                <p>Um breve resumo da Atividade 1. Aqui você pode descrever os principais pontos e resultados.</p>
-                <a href="./atv1.html"><button class="activity-button">Ver Atividade</button></a>
+            <section class="section-article">
+             
             </section>
-            
-            <section class="portfolio-card">
-                <img src="./img/atividade1.jpg" alt="Atividade 1">
-                <h2>Nome da Atividade 2</h2>
-                <p>Um breve resumo da Atividade 1. Aqui você pode descrever os principais pontos e resultados.</p>
-                <a href="./atv2.html"><button class="activity-button">Ver Atividade</button></a>
-            </section>
-            
-            <section class="portfolio-card">
-                <img src="./img/atividade1.jpg" alt="Atividade 1">
-                <h2>Nome da Atividade 3</h2>
-                <p>Um breve resumo da Atividade 1. Aqui você pode descrever os principais pontos e resultados.</p>
-                <a href="./atv3.html"><button class="activity-button">Ver Atividade</button></a>
-            </section>          
-            
             <footer class="footer-article">
-              
+               
             </footer>
         </article>
     </main>
@@ -121,38 +100,6 @@
 
         window.addEventListener('load', ajustarMenu);
         window.addEventListener('resize', ajustarMenu);
-
-
-
-        // ----------------------------------------
-
-        
-    // Função para verificar se o usuário está logado (isAuthenticated).
-    function isAuthenticated() {
-        // Aqui, você deve implementar a lógica para verificar se o usuário está logado.
-        // Pode ser por meio de cookies, sessões, tokens JWT, etc.
-        // Retorne true se o usuário estiver logado e false caso contrário.
-        return false; // Altere esta lógica conforme necessário.
-    }
-
-    // Função para lidar com o clique no botão.
-    function handleActivityButtonClick() {
-        if (isAuthenticated()) {
-            // Se o usuário estiver logado, redirecione-o para a página de atividade.
-            window.location.href = "./index.html"; // Altere o nome do arquivo conforme necessário.
-        } else {
-            // Se o usuário não estiver logado, redirecione-o para a página de login.
-            window.location.href = "login.html"; // Altere o nome do arquivo conforme necessário.
-        }
-    }
-
-    // Adicione um evento de clique aos botões com a classe "activity-button".
-    const activityButtons = document.querySelectorAll(".activity-button");
-    activityButtons.forEach(button => {
-        button.addEventListener("click", handleActivityButtonClick);
-    });
-
-
     </script>
 
 </body>
