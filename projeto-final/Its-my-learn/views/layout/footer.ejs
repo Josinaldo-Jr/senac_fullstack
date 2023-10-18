@@ -1,0 +1,55 @@
+<footer class="footer-bottom">
+    <article class="social-article">
+        <header class="social-header-article">
+
+            <a href="https://www.behance.net/josinaldojr" target="_blank">
+                <div class="socialA"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/josinaldo-euzebio-261697b7" target="_blank">
+                <div class="socialB"></div>
+            </a>
+            <a href="https://whats.link/josinaldosouzajr" target="_blank">
+                <div class="socialC"></div>
+            </a>
+
+        </header>
+
+        <section class="social-section-article">
+            <p>
+                It's My Learn, 2023 © All Rights Reserved
+            </p>
+            <p>
+                AV. Romualdo Galvão - Lagoa Seca - Natal-RN
+            </p>
+            <p>
+                Desenvolvido por <a href="https://github.com/josinaldo-jr" target="_blank">Josinaldo Jr</a>
+            </p>
+        </section>
+    </article>
+</footer>
+<script>
+
+    function ajustarMenu() {
+        if (window.innerWidth > 890) {
+            menu.style.display = "flex";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+
+    function activeMenu() {
+        if (menu.style.display == "flex") {
+            menu.style.display = "none";
+        }
+        else {
+            menu.style.display = "flex";
+        }
+    }
+
+    window.addEventListener('load', ajustarMenu);
+    window.addEventListener('resize', ajustarMenu);
+</script>
+
+</body>
+
+</html>
