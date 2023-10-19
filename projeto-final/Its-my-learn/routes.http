@@ -1,0 +1,29 @@
+POST http://localhost:3333/usuarios
+Content-Type: application/json
+
+{
+    "nome": "jose",
+    "email": "jose@hotmail.com",
+    "senha": 123
+}
+
+###
+
+GET http://localhost:3333/usuarios?search=
+
+###
+
+PUT http://localhost:3333/usuarios/69c9bf25-f53a-4ffb-8706-950be86f22fe
+Content-Type: application/json
+
+{
+    "nome": "joão",
+    "email": "joao@hotmail.com",
+    "senha": 321
+}
+
+###
+
+DELETE http://localhost:3333/usuarios/ab102073-235d-4a6d-ac2e-d403c1adab91
+
+
