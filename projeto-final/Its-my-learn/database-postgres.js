@@ -34,3 +34,4 @@ export class DatabasePostgres {
         await sql`delete from usuarios where id = ${id}`; 
     }
 }
+

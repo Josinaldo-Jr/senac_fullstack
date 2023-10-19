@@ -119,7 +119,7 @@ app.post('/cadastro', async (req, res) => {
 			email: req.body.email,
 			senha: hashedSenha
 		})
-		return response.status(201).send();
+		
 		// Mostra os Usuários
 		console.log(usuarios);
 		res.redirect("/add")
@@ -153,3 +153,4 @@ app.get('/esqueceu_senha', (req, res) => {
 
 // Cria um servidor 
 app.listen(3000, () => console.log('server is running'));
+
