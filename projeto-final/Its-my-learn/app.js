@@ -8,6 +8,11 @@ app.set('view engine', 'ejs');
 //Usando arquivo estatico
 app.use(express.static('public'));
 
+// Para analisar dados de formulário
+app.use(express.urlencoded({ extended: false }));
+
+// Para analisar dados JSON
+app.use(express.json());
 
 //Rotas:
 //Rota para favicon
@@ -53,6 +58,16 @@ app.get('/login', (req, res) => {
 //Rota para cadastro
 app.get('/cadastro', (req, res) => {
 	res.render("cadastro", {titulo:"Cadastro do Usuário"});
+});
+
+//Rota para cadastro bem sucediado
+app.get('/add', (req, res) => {
+	res.render("add", {titulo:"Usuário Cadastrado"});
+});
+
+//Rota para receber os dados cadastrados
+app.post('/add', (req, res) => {
+	res.send(req.body.nome);
 });
 
 //Rota para esqueceu a senha
