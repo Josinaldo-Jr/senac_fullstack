@@ -180,33 +180,33 @@ li:hover {
 }
 
 .socialA {
-    background-image: url(./img/behance.png);
+    background-image: url(/img/behance.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .socialA:hover {
-    background-image: url(./img/behanceB.png);
+    background-image: url(/img/behanceB.png);
 }
 
 .socialB {
-    background-image: url(./img/linkedin.png);
+    background-image: url(/img/linkedin.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .socialB:hover {
-    background-image: url(./img/linkedinB.png);
+    background-image: url(/img/linkedinB.png);
 }
 
 .socialC {
-    background-image: url(./img/whatsapp.png);
+    background-image: url(/img/whatsapp.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .socialC:hover {
-    background-image: url(./img/whatsappB.png);
+    background-image: url(/img/whatsappB.png);
 }
 
 .social-section-article {
